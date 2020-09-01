@@ -1,13 +1,13 @@
 body {
   margin: 0px;
   padding: 0px;
-  background: url("backg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
   font-family: monospace;
   text-transform: capitalize;
+  background-color: #ecf0f3;
 }
 .login {
+  background-color: #d1d9e6;
+  
   width: 540px;
   height: 580px;
   box-shadow: 6px 6px 30px #ccd8ec, -6px -6px 30px #f4f4f4;
@@ -46,13 +46,14 @@ body {
 }
 .main {
   width: 100%;
-  height: 55%;
+  height: 50%;
   box-shadow: inset 2px 6px 12px #d1d9e6, inset -2px -6px 12px #ebedf1;
   background-image: URL("backg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
+ 
 }
 .signin,
 .signup {
@@ -239,3 +240,103 @@ button:active {
     transform: rotate(0deg);
   }
 }
+/* break points */
+ @media (max-width:1332px){
+ .circule1{
+   width: 300px;
+   height: 300px;
+  top: -10%;
+  left: 70%;
+  transform: translateX(-70%);
+ }
+ .circule2{
+  width: 250px;
+  height: 250px;
+  top: 60%;
+  left: 30%;
+  transform: translateX(-40%);
+}
+} 
+@media (max-width:1028px){
+  .circule1{
+    display:none;
+  }
+  .circule2{
+    display:none;
+ }
+
+ body{
+  background:url('backg.jpg');
+   background-size: auto;
+   background-repeat: no-repeat; 
+  background-position: center;
+
+ }
+ } 
+ @media (max-width:620px){
+
+  .circule1{
+    display: inline;
+    width: 200px;
+    height: 200px;
+   top: 20%;
+   left: 50%;
+   transform: translateX(-50%);
+   z-index: 1;
+   opacity: .4;
+   
+  }
+.text{
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  top: 7%;
+  transform: translateX(-50%);
+
+}
+
+.text p{
+  color: #8293ad;
+ 
+}
+.login{
+  width:80%;
+ 
+}
+
+ } 
+
+@media(max-width:380px){
+
+  .circule1{
+    display:inline;
+    width: 150px;
+    height: 150px;
+    top: 0%;
+   left: 50%;
+   transform: translateX(-50%);
+   z-index: 1;
+   opacity: .2;
+   background-color: #8293ad;
+
+  }
+  .circule2{
+    display:inline;
+    width: 50px;
+    height: 50px;
+    top: 5%;
+   left: 50%;
+   transform: translateX(-50%);
+   z-index: 1;
+  
+
+  }
+  .login{
+ 
+  }
+
+
+
+
+}
+
